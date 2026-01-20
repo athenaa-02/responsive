@@ -3,3 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  padding: 0 40px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+
+  .header_container {
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #595959;
+
+    h2.long_title {
+      display: none;
+    }
+    ul.classic_menu,
+    .burger_menu_links {
+      display: none;
+    }
+    ul.burger_menu_links {
+      position: absolute;
+      background-color: white;
+      border: 1px solid #595959;
+      right: -25px;
+
+      li {
+        list-style: none;
+        border-bottom: 1px solid #595959;
+        a {
+          text-decoration: none;
+          color: #595959;
+          font-size: 18px;
+          padding: 10px;
+        }
+      }
+    }
+    div.burger_menu:hover .burger_menu_links {
+      display: block;
+    }
+    div.burger_menu {
+      position: relative;
+    }
+  }
+}
