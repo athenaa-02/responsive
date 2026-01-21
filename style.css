@@ -94,6 +94,34 @@ section.first {
   }
 }
 
+section.second {
+  margin-top: 120px;
+
+  span {
+    color: #575757;
+    font-size: 20px;
+  }
+  p.about_paragraph {
+    font-size: 30px;
+    width: 240px;
+    height: 104px;
+    text-align: center;
+  }
+  ul {
+    background-color: #ffc800;
+    width: fit-content;
+  }
+
+  a {
+    padding: 8px 12px 8px 26px;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/* responsive */
+
+/* tablet */
 @media screen and (min-width: 800px) {
   header .header_container h2.long_title {
     display: block;
@@ -116,6 +144,7 @@ section.first {
   }
 }
 
+/* desktop */
 @media screen and (min-width: 1280px) {
   section.first h1 {
     font-size: 120px;
